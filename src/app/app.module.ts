@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { EducationComponent } from './components/education/education.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
+import { CertificationsComponent } from './components/certifications/certifications.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'education', component: EducationComponent },
   { path: 'work', component: WorkExperienceComponent },
+  { path: 'certs', component: CertificationsComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactMeComponent },
 ];
@@ -24,6 +26,7 @@ const routes: Routes = [
     HomeComponent,
     EducationComponent,
     WorkExperienceComponent,
+    CertificationsComponent,
     ProjectsComponent,
     ContactMeComponent
   ],

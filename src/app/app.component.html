@@ -10,11 +10,13 @@
           <li class="nav-item" ngbDropdown display="dynamic">
             <a tabindex="0" ngbDropdownToggle id="navbarDropdown" role="button">Site Navigation</a>
             <div ngbDropdownMenu aria-labelledby="navbarDropdown" class="dropdown-menu">
-              <a ngbDropdownItem href="#" (click)="$event.preventDefault()" class="nav-link" routerLink="home">Home</a>
-              <a ngbDropdownItem (click)="$event.preventDefault()" class="nav-link" routerLink="education">Education</a>
-              <a ngbDropdownItem (click)="$event.preventDefault()" class="nav-link" routerLink="work">Work Experience</a>
-              <a ngbDropdownItem (click)="$event.preventDefault()" class="nav-link" routerLink="projects">Projects</a>
-              <a ngbDropdownItem href="javascript:Navigation.scrollTo('contact-me');" (click)="$event.preventDefault()" class="nav-link" routerLink="contact">Contact Me</a>
+              <a ngbDropdownItem href="#" (click)="$event.preventDefault()" class="nav-link" routerLinkActive="active" routerLink="home">Home</a>
+              <a ngbDropdownItem (click)="$event.preventDefault()" class="nav-link" routerLinkActive="active" routerLink="education">Education</a>
+              <a ngbDropdownItem (click)="$event.preventDefault()" class="nav-link" routerLinkActive="active" routerLink="work">Work Experience</a>
+              <a ngbDropdownItem (click)="$event.preventDefault()" class="nav-link" routerLinkActive="active" routerLink="certs">Certifications</a>
+              <a ngbDropdownItem (click)="$event.preventDefault()" class="nav-link" routerLinkActive="active" routerLink="projects">Projects</a>
+              <a ngbDropdownItem (click)="$event.preventDefault()" class="nav-link" routerLinkActive="active" routerLink="contact">Contact Me</a>
+              <!-- href="javascript:Navigation.scrollTo('contact-me');" -->
             </div>
           </li>
         </ul>
@@ -22,16 +24,13 @@
     </div>
   </nav>
 
-  <!-- <router-outlet></router-outlet> -->
-  <home></home>
-  <education></education>
-  <work-experience></work-experience>
-  <projects></projects>
-  <contact-me></contact-me>
+  <router-outlet>
+
+  </router-outlet>
 
   <footer class="flex-container">
     <!-- <div class="flex-item">Build Date: 2022.08.20</div> -->
-    <div class="flex-item">Copyright &copy; 2022</div>
+    <div class="flex-item">Copyright &copy; 2023</div>
     <div class="flex-item">Designed & Built By: Connor Shillady</div>
   </footer>
 </div>

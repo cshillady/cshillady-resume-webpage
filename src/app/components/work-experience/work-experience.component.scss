@@ -4,4 +4,35 @@
   background-color: rgba(0, 175, 250, 0.88);
   border: 1px solid white;
   border-radius: 24px;
+  color: midnightblue;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#PSU-Pic {
+  margin-left: 14px;
+}
+
+#CW-Pic {
+  border: 4px solid white;
+  border-radius: 50%;
+  margin-left: 28px;
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+.col-6 {
+  padding: 0;
+  margin: 0;
+}
+
+.field {
+  font-weight: bold;
 }
